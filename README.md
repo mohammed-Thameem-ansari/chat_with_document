@@ -1,107 +1,85 @@
-Chat_With_Document
+Chat with Document
+chat_with_document is an innovative application that enables users to interact with and extract information from documents using cutting-edge AI technologies. This project leverages natural language processing and document parsing to create a seamless experience for users seeking to understand and query their documents efficiently.
 
-Chat_With_Document is an advanced web application designed to enable seamless interaction with document-based content. It leverages state-of-the-art AI models to provide users with the ability to upload, process, and interactively chat with their documents for insights, summaries, and context-specific answers.
-
-Key Features
-
-Interactive Document Chat: Users can ask questions directly from the uploaded documents and receive AI-powered answers in real-time.
-
-Advanced AI Integration: Built using cutting-edge AI models like LLaMA 3, Gemini Pro, and Google Generative AI.
-
-Document Support: Handles a wide range of document formats such as PDFs, Word documents, and more.
-
-Seamless User Experience: Intuitive interface built using Streamlit for simplicity and accessibility.
-
-Efficient Retrieval: Enhanced by FAISS for fast and scalable similarity search.
-
-Customizable Responses: Fine-tuned responses using LangChain for better contextual understanding.
-
+Features
+Document Parsing: Ability to parse and read various document formats (PDF, text, etc.).
+AI-powered Queries: Interact with your document by asking questions in natural language and get accurate responses.
+Generative AI Integration: Uses AI models for document-based information extraction and natural language understanding.
 Tech Stack
+Backend: Python, Streamlit
+Libraries: google-generativeai, python-dotenv, langchain, pyPDF2, faiss-cpu, langchain_google_genai
+API: Google API (for integration with generative AI models)
+Deployment: Local deployment (plan for future deployment on cloud platforms like AWS, Heroku)
+Setup Instructions
+Follow these steps to get your environment up and running:
 
-Frontend:
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/mohammed-Thameem-ansari/chat_with_document.git
+cd chat_with_document
+2. Create a Virtual Environment
+Create a virtual environment to isolate dependencies:
 
-Streamlit: A simple and effective framework for creating web apps.
-
-Backend:
-
-Python: Core programming language for logic implementation.
-
-PyPDF2: Extracts text and metadata from PDF files.
-
-FAISS: Facilitates efficient document chunk searching and similarity.
-
-LangChain: Provides a framework for creating conversational AI applications.
-
-AI Models:
-
-Google Generative AI: Ensures powerful and contextual language understanding.
-
-LLaMA 3/Gemini Pro: Free and advanced large language models integrated for answering user queries.
-
-Deployment:
-
-Requirements managed via a requirements.txt file.
-
-Virtual environment for dependency isolation.
-
-Installation and Setup
-
-Follow these steps to set up and run Chat_With_Document locally:
-
-Prerequisites:
-
-Python 3.8 or higher
-
-Git
-
-Steps:
-
-Clone the Repository:
-git clone https://github.com/yourusername/Chat_With_Document.git
-cd Chat_With_Document
-
-Create and Activate a Virtual Environment:
+bash
+Copy
+Edit
 python -m venv .venv
-.\.venv\Scripts\activate  # On Windows
-source .venv/bin/activate   # On macOS/Linux
+Activate the virtual environment:
 
-Install Dependencies:
-        pip install -r requirements.txt
+On Windows:
 
-Run the Application:
-         streamlit run app.py
+bash
+Copy
+Edit
+.\.venv\Scripts\activate
+On macOS/Linux:
 
-Access the App:
-Open your browser and navigate to http://localhost:8501/.
+bash
+Copy
+Edit
+source .venv/bin/activate
+3. Install Dependencies
+Install the required dependencies using pip:
 
-File Structure
+bash
+Copy
+Edit
+pip install -r requirements.txt
+If requirements.txt is not available, you can install dependencies manually:
 
-C:\Users\Thameem Ansari\Chat_With_Document
-├── .venv/                 # Virtual environment files (excluded in Git)
-├── static/               # Static assets (CSS, images, JS)
-├── app.py               # Main application logic
-├── requirements.txt     # Project dependencies
-├── .gitignore           # Git ignore rules
+bash
+Copy
+Edit
+pip install streamlit google-generativeai python-dotenv langchain pyPDF2 faiss-cpu langchain_google_genai
+4. Set up the API Key
+Make sure to create a .env file in the root directory of the project and add your Google API key:
 
-Features in Development
+makefile
+Copy
+Edit
+GOOGLE_API_KEY=your_api_key_here
+5. Run the Application
+Once the environment is set up, you can run the application:
 
-Multi-language Support: Enable interactions in multiple languages.
+bash
+Copy
+Edit
+streamlit run app.py
+This will start the app, and you can interact with the document from the browser.
 
-Database Integration: Store user sessions and document data.
-
-Enhanced Document Parsing: Add support for more complex document structures.
-
-Contribution
-
-Contributions are welcome! To contribute:
+Usage
+Upload a document to the system.
+Ask questions related to the document in natural language.
+The AI model will extract relevant information from the document and return answers.
+Contributing
+Contributions are welcome! If you'd like to contribute to the project, feel free to open a pull request. Here’s how you can contribute:
 
 Fork the repository.
-
-Create a feature branch.
-
-Commit your changes.
-Submit a pull request.
-
+Create a new branch (git checkout -b feature-name).
+Make your changes and commit them (git commit -am 'Add feature').
+Push to your forked repository (git push origin feature-name).
+Submit a pull request with a detailed description of your changes.
 License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
