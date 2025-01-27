@@ -1,0 +1,9 @@
+streamlit
+transformers
+langchain-community
+google-generativeai
+python-dotenv
+langchain
+pyPDF2
+joblib
+scikit-learn
