@@ -1,4 +1,6 @@
 Chat with Document
+
+
 chat_with_document is an innovative application that enables users to interact with and extract information from documents using cutting-edge AI technologies. This project leverages natural language processing and document parsing to create a seamless experience for users seeking to understand and query their documents efficiently.
 
 Features
